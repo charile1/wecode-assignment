@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/c8a2d89948.js" crossorigin="anonymous"></script>
+    <title></title>
+    <style>
+        button {
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        img {
+            width: 30rem;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            border-radius: 1rem;
+            border: 0.5px solid gainsboro;
+            width: 33rem;
+            height: 2.3rem;
+        }
+
+        .search-box input::placeholder {
+            padding-left: 1rem;
+        }
+
+        .fa-solid {
+            cursor: pointer;
+        }
+
+        .fa-magnifying-glass {
+            position: absolute;
+            left: 10px;
+            top: 12px;
+        }
+
+        .fa-keyboard {
+            position: absolute;
+            right: 3rem;
+            top: 12px;
+        }
+
+        .fa-microphone {
+            position: absolute;
+            right: 1rem;
+            top: 12px;
+        }
+
+        .btn-box {
+            margin-top: 1rem;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            border: none;
+            border-radius: 0.5rem;
+            color: gray;
+            font-size: 1rem;
+        }
+
+        small {
+            margin-top: 1rem;
+            font-size: 11px;
+        }
+        
+        .search-box input::placeholder {
+            padding-left: 10px; 
+            width: 50%;
+            margin-left: 10px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="https://user-images.githubusercontent.com/61774575/95163201-34411c00-075c-11eb-9987-d6301acb4dab.png" alt="weegle 로고">
+        <div class="search-box">
+            <input type="text" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-keyboard"></i>
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+        <div class="btn-box">
+            <button>weegle 검색</button>
+            <button>I'm feeling Lucky</button>
+        </div>
+        <small>
+            Weegle 제공 서비스 : <a href="#none">English</a>
+        </small>
+    </section>
+
+</body>
+</html>

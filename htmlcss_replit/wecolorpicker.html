@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/c8a2d89948.js" crossorigin="anonymous"></script>
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 300px;
+            background-color: #EBEFF3;
+            border-radius: 10px;
+            margin: 2rem;
+            padding: 10px;
+        }
+
+        .container .colorBox {
+            display: block;
+            width: 90%;
+            background-color: #709FB0;
+            margin: 0 auto;
+            margin-top: 1rem;
+            border-radius: 10px;
+            height: 230px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .colorBox span {
+            color: white;
+            background-color: gray;
+            position: absolute;
+            bottom: 1rem;
+            left: 0;
+            padding: 2px;
+            opacity: 0;
+        }
+
+        .container .colorBox:hover span {
+            opacity: 1;
+        }
+
+        .flexbox {
+            width: 90%;
+            margin: 1.5rem auto 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flexbox button {
+            width: 70px;
+            height: 40px;
+            padding: 3px;
+            border: 0.5px solid;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .flexbox .date {
+            line-height: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="colorBox">
+            <span>#709fb0</span>
+        </div>
+        <div class="flexbox">
+            <button>
+                <i class="fa-solid fa-heart"></i>
+                <span>451</span>
+            </button>
+            <div class="date">
+                3days
+            </div>
+        </div>
+    </div>
+</body>
+</html>
